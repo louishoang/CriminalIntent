@@ -1,5 +1,6 @@
 package com.louishoang.criminalintent;
 
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -29,9 +30,8 @@ public class CrimeFragment extends Fragment {
     mCrime = new Crime();
   }
 
-  @Nullable
   @Override
-  public View onCreateView(LayoutInflater inflater, ViewGroup parent, @Nullable Bundle savedInstanceState) {
+  public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
     View v = inflater.inflate(R.layout.fragment_crime, parent, false);
 
     mDateButton = (Button)v.findViewById(R.id.crime_date);
